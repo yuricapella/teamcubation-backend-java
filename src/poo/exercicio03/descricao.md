@@ -19,3 +19,10 @@ e forneça métodos getter e setter para cada um deles.
 Médio: Adicione validação nos setters, por exemplo, anoPublicacao não pode ser negativo.
 Difícil: Na classe Biblioteca, crie um método buscarLivroPorTitulo(String titulo) 
 que retorna o livro com o título especificado.
+
+Exercício 3: Herança e Polimorfismo
+Parte 3: Herança
+Fácil: Crie uma classe Revista que herda da classe Livro e adicione um atributo edicao (int).
+Médio: Sobrescreva o método exibirDetalhes() na classe Revista para incluir a edição da revista.
+Difícil: Modifique a classe Biblioteca para que ela possa armazenar tanto livros quanto revistas. 
+Utilize polimorfismo para listar os detalhes de cada item corretamente.

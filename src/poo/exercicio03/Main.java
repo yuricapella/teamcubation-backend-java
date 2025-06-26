@@ -1,14 +1,16 @@
-package poo.exercicio02;
+package poo.exercicio03;
 
 public class Main {
     public static void main(String[] args) {
-        Livro livro = new Livro("Yuri","Orientação a objeto 1",2025);
-        Livro livro2 = new Livro("Capella","Orientação a objeto 2",2025);
-        Livro livro3 = new Livro("Dos Santos","Orientação a objeto 3",2025);
+        Livro livro = new Livro("Yuri","Orientação a objetos 1",2025);
+        Livro livro2 = new Livro("Capella","Orientação a objetos 2",2025);
+        Livro livro3 = new Livro("Dos Santos","Orientação a objetos 3",2025);
+        Livro revista = new Revista("Yuri","Orientação a objetos 4",2025,1);
         Biblioteca biblioteca = new Biblioteca();
 
         exercicio01(livro,livro2,livro3, biblioteca);
         exercicio02(livro, biblioteca);
+        exercicio03(revista,biblioteca);
     }
 
     public static void exercicio01(Livro livro, Livro livro2, Livro livro3,  Biblioteca biblioteca) {
@@ -32,5 +34,13 @@ public class Main {
         livro.setTitulo("abcd");
         Livro livro2 = biblioteca.buscarLivroPorTitulo("abcd");
         livro2.exibirDetalhes();
+    }
+
+    public static void exercicio03(Livro revista,  Biblioteca biblioteca) {
+        System.out.println("=================");
+        System.out.println("Exercicio 3");
+
+        biblioteca.adicionarLivro(revista);
+        biblioteca.listarLivros();
     }
 }

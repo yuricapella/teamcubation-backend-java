@@ -1,4 +1,4 @@
-package poo.exercicio02;
+package poo.exercicio03;
 
 import java.util.ArrayList;
 
@@ -12,7 +12,7 @@ public class Biblioteca {
     public void listarLivros() {
         for(int i = 0; i < livros.size(); i++){
             System.out.println("=================");
-            System.out.println("=====LIVRO "+(i+1)+"=====");
+            System.out.printf("%s\n\n",livros.get(i).getClass().getSimpleName());
             livros.get(i).exibirDetalhes();
         }
     }
