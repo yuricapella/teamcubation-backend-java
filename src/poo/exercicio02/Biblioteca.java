@@ -1,4 +1,4 @@
-package poo.exercicio01;
+package poo.exercicio02;
 
 import java.util.ArrayList;
 
@@ -15,5 +15,15 @@ public class Biblioteca {
             System.out.println("=====LIVRO "+(i+1)+"=====");
             livros.get(i).exibirDetalhes();
         }
+    }
+
+    public Livro buscarLivroPorTitulo(String titulo) {
+        Livro livroPorTitulo = null;
+        for(Livro livro : livros){
+            if(livro.getTitulo().equals(titulo)){
+                livroPorTitulo = livro;
+            }
+        }
+        return livroPorTitulo;
     }
 }
