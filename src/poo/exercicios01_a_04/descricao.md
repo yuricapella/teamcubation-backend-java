@@ -26,3 +26,9 @@ Fácil: Crie uma classe Revista que herda da classe Livro e adicione um atributo
 Médio: Sobrescreva o método exibirDetalhes() na classe Revista para incluir a edição da revista.
 Difícil: Modifique a classe Biblioteca para que ela possa armazenar tanto livros quanto revistas. 
 Utilize polimorfismo para listar os detalhes de cada item corretamente.
+
+Exercício 4: Interfaces e Classes Abstratas
+Parte 4: Interfaces e Classes Abstratas
+Fácil: Crie uma interface ItemBiblioteca com o método exibirDetalhes().
+Médio: Faça com que Livro e Revista implementem a interface ItemBiblioteca.
+Difícil: Crie uma classe abstrata Item que implemente ItemBiblioteca e faça com que Livro e Revista herdem de Item. Adicione um método abstrato getTipo() na classe Item que retorna o tipo de item (livro ou revista).

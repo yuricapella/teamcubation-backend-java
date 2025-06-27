@@ -1,13 +1,14 @@
-package poo.exercicio03;
+package poo.exercicios01_a_04;
 
 public class Revista extends Livro{
     private int edicao;
 
-    public Revista(String autor, String titulo, int anoPublicacao, int edicao) {
-        super(autor, titulo, anoPublicacao);
+    public Revista(String titulo, String autor, int anoPublicacao, int edicao) {
+        super(titulo, autor, anoPublicacao);
         this.edicao = edicao;
     }
 
+    @Override
     public void exibirDetalhes(){
         super.exibirDetalhes();
         System.out.println("Edição: " + edicao);

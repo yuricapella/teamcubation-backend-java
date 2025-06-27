@@ -1,13 +1,13 @@
-package poo.exercicio03;
+package poo.exercicios01_a_04;
 
-public class Livro {
-    private String titulo;
-    private String autor;
-    private int anoPublicacao;
+public abstract class Item implements ItemBiblioteca{
+    protected String titulo;
+    protected String autor;
+    protected int anoPublicacao;
 
-    public Livro(String autor, String titulo, int anoPublicacao) {
-        this.autor = autor;
+    public Item(String titulo, String autor, int anoPublicacao) {
         this.titulo = titulo;
+        this.autor = autor;
         this.anoPublicacao = anoPublicacao;
     }
 
@@ -17,8 +17,18 @@ public class Livro {
         System.out.println("Ano: " + anoPublicacao);
     }
 
+    public abstract String getTipo();
+
     public String getTitulo() {
         return titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public int getAnoPublicacao() {
+        return anoPublicacao;
     }
 
     public void setTitulo(String titulo) {
@@ -29,20 +39,12 @@ public class Livro {
         }
     }
 
-    public String getAutor() {
-        return autor;
-    }
-
     public void setAutor(String autor) {
         if(autor.length()>=3){
             this.autor = autor;
         }else {
             System.out.println("O autor deve ter no minimo 3 caracteres");
         }
-    }
-
-    public int getAnoPublicacao() {
-        return anoPublicacao;
     }
 
     public void setAnoPublicacao(int anoPublicacao) {
